@@ -14,9 +14,9 @@ def mostrar_minimo(matriz):
             producto_minimo_precio = matriz[i]
     return producto_minimo_precio
 
-
-matriz = [["zanahoria", 25000, 3], ["hamburguesa", 2000, 4], ["Pepino",15000, 6]]
-
-
-print(mostrar_maximo([["zanahoria", 25000, 3], ["hamburguesa", 2000, 4], ["Pepino",15000, 6]]))
-print(mostrar_minimo([["zanahoria", 25000, 3], ["hamburguesa", 2000, 4], ["Pepino",15000, 6]]))
+def mostrar_mayores_15000(matriz):
+    nueva_matriz = []
+    for i in range(len(matriz)):
+        if matriz[i][1] > 15000:
+            nueva_matriz += matriz[i]
+    return nueva_matriz
